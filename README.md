@@ -1,1 +1,1 @@
-# Social network Design for students of school
+# Social network Design for school students

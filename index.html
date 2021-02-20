@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/21b0c35351.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- NAVIGATION BAR -->
     <nav>
         <ul>
             <li><a href="#" class="home"><i class="fas fa-home"></i>Seytech</a></li
@@ -17,7 +18,10 @@
             ><li><a href="#"><i class="fas fa-envelope"></i></a></li>
         </ul>
     </nav>
+    <!-- NAVIGATION BAR END -->
+    <!-- BODY -->
     <div class="container">
+        <!-- LEFT ASIDE SART -->
         <aside class="left">
             <section class="profile-block">
                 <div class="profile-image">
@@ -76,69 +80,83 @@
                 <div class="close-btn">x</div>
             </section>
         </aside>
+        <!-- LEFT ASIDE END -->
+        <!-- MAIN PART START -->
         <main>
             <section class="status">
-                <form>
-                    <input type="text" placeholder="Status: Feeling Good" required>
+                <input type="text" placeholder="type your staus here..." value="Status: Feeling Good" required>
+                <div class="buttons-block">
                     <button type="submit"><i class="fas fa-pencil-alt"></i>Post</button>
-                </form>
-            </section>
-            <section class="post">
-                <span class="time">1 min</span>
-                <div class="user">
-                    <img src="./media/profile.jpg" alt="">
-                    <div class="name">Rachel Sine</div>
-                </div>
-                <hr>
-                <div class="post-content">
-                    <p class="text">Next cohort will start soon. We strive for teaching our students the most up-to-date programming technologies. Contact us.</p>
-                    <div class="images-box">
-                        <img src="./media/p0.png" alt="">
-                        <img src="./media/p1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="buttons-block">
-                    <button class="like">Like</button>
-                    <button class="comment">Comment</button>
                 </div>
             </section>
-            <section class="post">
-                <span class="time">16 min</span>
-                <div class="user">
-                    <img src="./media/profile.jpg" alt="">
-                    <div class="name">Aikol T</div>
-                </div>
-                <hr>
-                <div class="post-content">
-                    <p class="text">Join us at the new and improved Microsoft! We are building the Developer Relations dream team in Azure engineering. Our global team is...</p>
-                    <div class="images-box">
+            <!-- POST -->
+            <section>
+                <div class="post">
+                    <span class="time">1 min</span>
+                    <div class="user">
+                        <img src="./media/profile.jpg" alt="">
+                        <span class="name">Rachel Sine</span>
                     </div>
-                </div>
-                <div class="buttons-block">
-                    <button class="like">Like</button>
-                    <button class="comment">Comment</button>
+                    <hr>
+                    <div class="post-content">
+                        <p class="text">Next cohort will start soon. We strive for teaching our students the most up-to-date programming technologies. Contact us.</p>
+                        <div class="images-box">
+                            <div class="image-wrap">
+                            <img src="./media/p0.png" alt=""></div>
+                            <div class="image-wrap">
+                            <img src="./media/p1.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                        <button class="comment"><i class="fas fa-comment"></i>Comment</button>
+                    </div>
                 </div>
             </section>
-            <section class="post">
-                <span class="time">32 min</span>
-                <div class="user">
-                    <img src="./media/profile.jpg" alt="">
-                    <div class="name">L'uan R</div>
-                </div>
-                <hr>
-                <div class="post-content">
-                    <p class="text">Have you seen this?</p>
-                    <div class="images-box">
-                        <img src="./media/web.png" alt="">
+            <!-- POST -->
+            <section>
+                <div class="post">
+                    <span class="time">16 min</span>
+                    <div class="user">
+                        <img src="./media/profile.jpg" alt="">
+                        <span class="name">Aikol T</span>
+                    </div>
+                    <hr>
+                    <div class="post-content">
+                        <p class="text">Next cohort will start soon. We strive for teaching our students the most up-to-date programming technologies. Contact us.</p>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                        <button class="comment"><i class="fas fa-comment"></i>Comment</button>
                     </div>
                 </div>
-                <div class="buttons-block">
-                    <button class="like">Like</button>
-                    <button class="comment">Comment</button>
+            </section>
+            <!-- POST -->
+            <section>
+                <div class="post">
+                    <span class="time">32 min</span>
+                    <div class="user">
+                        <img src="./media/profile.jpg" alt="">
+                        <span class="name">L'uan R</span>
+                    </div>
+                    <hr>
+                    <div class="post-content">
+                        <p class="text">Next cohort will start soon. We strive for teaching our students the most up-to-date programming technologies. Contact us.</p>
+                        <div class="images-box">
+                            <div class="image-wrap">
+                            <img src="./media/web.png" alt=""></div>
+                        </div>
+                        <p class="text">Coding bootcamp reviews, rankings, and resources to help students find what they need. <a href="https://www.seytech.co" target="_blank">Bootcamp Venue</a></p>
+                    </div>
+                    <div class="buttons-block">
+                        <button class="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                        <button class="comment"><i class="fas fa-comment"></i>Comment</button>
+                    </div>
                 </div>
             </section>
         </main>
-        <!-- RIGHT ASIDE STARTS HERE -->
+        <!-- MAIN PART END -->
+        <!-- RIGHT ASIDE STARTS -->
         <aside class="right">
             <section class="ads-block">
                 <p>Upcoming Events:</p>
@@ -165,10 +183,12 @@
                 <i class="fa fa-bug w3-xxlarge"></i>
             </section>
         </aside>
+        <!-- RIGHT ASIDE END -->
     </div>
-    <!-- <footer>
+    <div class="clearfix"></div>
+    <footer>
         <div>Footer</div>
-        <div>Powered by <a href="#">team number 3</a></div>
-    </footer> -->
+        <div class="license">Powered by <a href="#">team number 3</a></div>
+    </footer>
 </body>
 </html>

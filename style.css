@@ -9,19 +9,31 @@ body{
     margin: 0;
     padding: 0;
 }
-i{
-    font-size: 1em;
-}
 img{
     width: 100%;
 }
+hr{
+    height: 1px;
+    background-color:rgb(231, 231, 231);
+    border: none;
+}
+button{
+    outline: none;
+}
+.clearfix{
+    clear: both;
+}
+section i{
+    margin-right: 20px;
+}
 
-/* NAV_BAR styles */
+/* NAVIGATION BAR */
 nav{
     position: fixed;
     top: 0;
     width: 100%;
     background-color: rgb(29, 133, 252);
+    z-index: 10;
 }
 nav ul{
     list-style-type: none;
@@ -49,28 +61,45 @@ nav li a:hover{
     background-color: white;
     color: black;
 }
+/* NAVIGATION BAR end */
 
-/* MAIN STYLES */
+/* LAYOUT STYLE */
 .container{
     margin: auto;
-    margin-top: 50px;
-    max-width: 1000px;
+    margin-top: 70px;
+    max-width: 1200px;
+}
+aside, main{
+    float: left;
 }
 aside.left{
-    width: 30%;
-    float:left;
+    width: 25%;
 }
-aside > *{
-    margin-top: 20px;
+main{
+    width: 55%;
 }
-section i{
-    margin-right: 20px;
+aside.right{
+    width: 20%;
 }
-/* profile image block style */
+.profile-block, .interests, main section, aside.right section{
+    border-radius: 4px;
+}
+.profile-block, .misc-block, .interests, main section, aside.right section{
+    box-shadow: 0 0 4px rgb(189, 189, 189);
+}
+section{
+    background-color: white;
+}
+/* LAYOUT end */
+
+/* LEFT ASIDE STYLES */
+aside section{
+    margin-bottom: 20px;
+}
+/* profile-block style */
 .profile-block{
     background-color: white;
     padding: 20px;
-    border-radius: 3px;
 }
 .profile-image > *{
     margin-bottom: 15px;
@@ -81,11 +110,6 @@ section i{
 .profile-image img{
     width: 100px;
     border-radius: 50%;
-}
-.profile-block hr{
-    height: 1px;
-    background-color:rgb(231, 231, 231);
-    border: none;
 }
 .common-info{
     font-size: 0.8em;
@@ -100,12 +124,9 @@ section i{
 .common-info li + li{
     margin-top: 15px;
 }
-/* profile image end */
+/* profile-block end */
 
-/*  MISC SECTION styles */
-.misc-block, .interests, .find-who{
-    background-color: white;
-}
+/* misc-section styles */
 .cell{
     font-size: 0.8em;
 }
@@ -122,8 +143,9 @@ section i{
 .cell .content-block{
     padding: 10px 20px;
 }
+/* misc-section end */
 
-/* PHOTO SECTION style */
+/* photoos section style */
 .grid-photos{
     text-align: center;
 }
@@ -132,8 +154,9 @@ section i{
     margin-left: 2%;
     margin-bottom: 2%;
 }
+/* photos section end */
 
-/* INTEREST section style */
+/* interest section style */
 .interests{
     padding: 20px;
     font-size: 0.8em;
@@ -170,14 +193,16 @@ span.si{
     background-color: rgb(214, 231, 236);
     color: black;
 }
+/* interest section end */
 
-/* FIND-WHO style */
+/* find-who style */
 .find-who{
     position: relative;
     padding: 20px;
     font-size: 0.8em;
     background-color: rgb(207, 217, 224);
     border-radius: 3px;
+    border: 1px solid rgb(170, 177, 182);
     overflow: hidden;
 }
 .find-who .title{
@@ -195,27 +220,89 @@ span.si{
     background-color: lightgray;
     cursor: pointer;
 }
+/* find-who end */
+/* LEFT ASIDE end */
 
-/* MAIN SECTION STARTS HERE*/
-main{
-    width: 50%;
-    float:left;
-    height: 20px;
+/*  MAIN SECTION */
+/* status-block */
+main section{
+    padding: 20px 20px 10px 20px;
+    margin: 0 15px 15px 15px;
 }
+.status input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 0.8em;
+    outline: none;
+}
+main button{
+    padding: 10px 15px;
+    color: white;
+    background-color: rgb(29, 133, 252);
+    border: none;
+    cursor: pointer;
+}
+main button:hover{
+    background-color: lightgray;
+    color: black;
+}
+main button i{
+    margin-right: 10px;
+}
+main .buttons-block{
+    margin-top: 10px;
+}
+/* status-block end */
 
-
-
-
+/* post section  */
+.post{
+    position: relative;
+}
+.time{
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 0.8em;
+}
+.user{
+    position: relative;
+}
+.user img{
+    width: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.user .name{
+    margin-left: 10px;
+    font-size: 1.1em;
+}
+.user{
+    margin-bottom: 30px;
+}
+.post-content .text{
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+.post-content .text a{
+    color: inherit;
+}
+.post-content .images-box{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.post-content .images-box .image-wrap{
+    flex: 1;
+}
+/* post section end */
+/* MAIN SECTION end */
 
 /* RIGHT ASIDE STYLES */
-aside.right{
-    width: 20%;
-    float: left;
-}
+/* ads-block styles */
 .ads-block{
     padding: 15px;
     font-size: 0.8em;
-    background-color: white;
     text-align: center;
 }
 .ads-block p{
@@ -248,7 +335,6 @@ aside.right{
     border: none;
     color: white;
     font-weight: bold;
-    /* text-align: center; */
 }
 .ads-block button:hover{
     background-color: lightgray;
@@ -270,3 +356,21 @@ aside.right{
 .ads-block.bug i{
     margin: 0;
 }
+/* ads-block end */
+/* RIGHT ASIDE end */
+
+/* FOOTER STYLES */
+footer div{
+    background-color: rgb(29, 133, 252);
+    color: white;
+    padding: 30px 20px;
+}
+footer .license{
+    padding: 20px;
+    background-color: rgb(0, 72, 155);
+}
+.license a{
+    text-decoration: none;
+    color: inherit;
+}
+/* FOOTER end */

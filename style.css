@@ -2,6 +2,7 @@
 body{
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    background-color: rgb(241, 241, 241);
 }
 *{
     box-sizing: inherit;
@@ -14,8 +15,6 @@ i{
 img{
     width: 100%;
 }
-
-
 
 /* NAV_BAR styles */
 nav{
@@ -40,6 +39,9 @@ nav li a{
 nav .home{
     background-color: rgb(25, 60, 100);
 }
+.home i{
+    margin-right: 20px;
+}
 nav li a.home:hover{
     background-color: lightgray;
 }
@@ -55,6 +57,141 @@ nav li a:hover{
     max-width: 1000px;
 }
 aside.left{
-    width: 25%;
+    width: 30%;
+}
+aside > *{
+    margin-top: 20px;
+}
+section i{
+    margin-right: 20px;
+}
+/* profile image block style */
+.profile-block{
+    background-color: white;
+    padding: 20px;
+    border-radius: 3px;
+}
+.profile-image > *{
+    margin-bottom: 15px;
+}
+.profile-image{
+    text-align: center;
+}
+.profile-image img{
+    width: 100px;
+    border-radius: 50%;
+}
+.profile-block hr{
+    height: 1px;
+    background-color:rgb(231, 231, 231);
+    border: none;
+}
+.common-info{
+    font-size: 0.8em;
+}
+.common-info i{
+    color: gray;
+}
+.common-info ul{
+    margin-top: 15px;
+    list-style-type: none;
+}
+.common-info li + li{
+    margin-top: 15px;
+}
+/* profile image end */
+
+/*  MISC SECTION styles */
+.misc-block, .interests, .find-who{
+    background-color: white;
+}
+.cell{
+    font-size: 0.8em;
+}
+.cell .title{
+    background-color: rgb(29, 133, 252);
+    color: white;
+    padding: 10px 20px;
+}
+.cell .title:hover{
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+}
+.cell .content-block{
+    padding: 10px 20px;
+}
+
+/* PHOTO SECTION style */
+.grid-photos{
+    text-align: center;
+}
+.grid-photos img{
+    width: 44%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+/* INTEREST section style */
+.interests{
+    padding: 20px;
+    font-size: 0.8em;
+}
+.interests p{
+    margin-bottom: 15px;
+}
+.interests span{
+    display: inline-block;
+    padding: 2px 4px;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 3px;
+}
+span.pr{
+    background-color: rgb(36, 87, 182);
+}
+span.sc{
+    background-color:  rgb(16, 132, 240);
+}
+span.th{
+    background-color: rgb(156, 156, 156);
+    color: black;
+}
+span.fo{
+    background-color: lightgray;
+    color: black;
+}
+span.fi{
+    background-color: rgb(205, 212, 212);
+    color: black;
+}
+span.si{
+    background-color: rgb(214, 231, 236);
+    color: black;
+}
+
+/* FIND-WHO style */
+.find-who{
+    position: relative;
+    padding: 20px;
+    font-size: 0.8em;
+    background-color: rgb(207, 217, 224);
+    border-radius: 3px;
+    overflow: hidden;
+}
+.find-who .title{
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.close-btn{
+    position: absolute;
+    padding: 5px 15px;
+    top: 0;
+    right: 0;
+    background-color: rgb(159, 178, 187);
+}
+.close-btn:hover{
+    background-color: lightgray;
+    cursor: pointer;
 }
 

@@ -146,14 +146,11 @@ aside section{
 }
 /* misc-section end */
 
-/* photoos section style */
+/* photos section style */
 .grid-photos{
-    text-align: center;
-}
-.grid-photos img{
-    width: 44%;
-    margin-left: 2%;
-    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 /* photos section end */
 
@@ -388,5 +385,8 @@ footer .license{
     }
     .mob-hide{
         display: none;
+    }
+    .grid-photos{
+        grid-template-columns: 1fr;
     }
 }

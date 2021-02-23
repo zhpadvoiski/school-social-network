@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 body{
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -374,3 +375,18 @@ footer .license{
     color: inherit;
 }
 /* FOOTER end */
+@media screen and (max-width: 768px){
+    aside.left, aside.right, main{
+        float: none;
+        width: 100%;
+    }
+    .container{
+        width: 95%;
+    }
+    main section{
+        margin: 0 0 15px 0;
+    }
+    .mob-hide{
+        display: none;
+    }
+}

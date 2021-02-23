@@ -31,6 +31,7 @@ section i{
 /* NAVIGATION BAR */
 nav{
     position: fixed;
+    display: flex;
     top: 0;
     width: 100%;
     background-color: rgb(29, 133, 252);
@@ -38,11 +39,9 @@ nav{
 }
 nav ul{
     list-style-type: none;
+    display: flex;
 }
-nav li{
-    display: inline-block;
-}
-nav li a{
+nav a{
     display: inline-block;
     padding: 12px 20px;
     font-size: 1.1em;
